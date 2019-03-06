@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  h1 {
+    font-size: 5rem;
+  }
+  input {
+    padding: 1rem;
+  }
+  button {
+    margin: 1rem;
+  }
+}
+.form {
+  width: 40rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center
+;
+}
+
