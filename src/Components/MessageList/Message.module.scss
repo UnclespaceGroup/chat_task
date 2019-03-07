@@ -13,4 +13,10 @@
   padding: .5rem;
 }
 
-
+.pagination {
+  display: flex;
+  flex-direction: row;
+  button {
+    margin: .1rem;
+  }
+}

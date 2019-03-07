@@ -26,16 +26,18 @@ class MessageList extends Component {
     const currentList = messages.slice(startIndex, startIndex + MASSAGE_IN_LIST)
     return (
       <div className={s.wrapper}>
-        <Button
-          disabled={prevDisabled}
-          onClick={() => {
-            this.setState({number: number - 1})
-          }}>previous</Button>
-        <Button
-          disabled={nextDisabled}
-          onClick={() => {
-            this.setState({number: number + 1})
-          }}>Следующий</Button>
+        <div className={s.pagination}>
+          <Button
+            disabled={prevDisabled}
+            onClick={() => {
+              this.setState({number: number - 1})
+            }}>Prev</Button>
+          <Button
+            disabled={nextDisabled}
+            onClick={() => {
+              this.setState({number: number + 1})
+            }}>Next</Button>
+        </div>
         {currentList.map((message, index) => (
           <Card key={index} className={s.card}>
             <span>{message.senderId}</span>
