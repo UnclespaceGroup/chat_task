@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 80rem;
+  flex-direction: column;
+}
+
+.card {
+  width: 100%;
+  margin: .3rem;
+  padding: .5rem;
+}
+
+

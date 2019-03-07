@@ -20,7 +20,7 @@ class LoginForm extends Component {
     return (
       <div className={s.wrapper}>
         <div className={s.form}>
-          <h1>Let's Talk</h1>
+          <h1>Chat base on Chatkit</h1>
 
           <form onSubmit={this.handleSubmit}>
             <Label htmlFor="text">What is your login?</Label>

@@ -1,8 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
-import ChatMessage from './Components/ChatMessage';
 import LoginForm from './Components/LoginForm/LoginForm';
-import ChatApp from './Components/ChatApp';
+import Chat from './Components/Chat/Chat';
 
 import { default as Chatkit } from '@pusher/chatkit-server';
 
@@ -54,7 +53,7 @@ class App extends Component {
     switch (this.state.currentView) {
 
       case "chatApp":
-        view = <ChatApp currentId={this.state.currentId} />;
+        view = <Chat currentId={this.state.currentId} />;
         break;
       default:
         view = <LoginForm onSubmit={this.createUser} />;
